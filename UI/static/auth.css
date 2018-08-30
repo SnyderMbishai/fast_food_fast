@@ -19,7 +19,7 @@ body{
   text-align: center;
 }
 
-.register{
+.register, .login{
   background-color: #FFFFFF;
   position: relative;
   margin: 2% auto;
@@ -28,6 +28,10 @@ body{
   border-style: inset;
   padding: 12px;  
   color: saddlebrown;
+}
+
+.login{
+  margin-top: 132px;
 }
 
 #submit{
