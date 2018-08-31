@@ -41,7 +41,6 @@ body{
     background-color:#FFA500;
   }
 
-
 .introduction, #btn{
 
     text-align: center;
@@ -55,16 +54,16 @@ body{
   }
 
 #top{
-    margin-top: 100px;
-  }
+  margin-top: 100px;
+}
 
 #footer{
-    position: fixed;
-    bottom: 0px;
-    height: 40px;
-    left: 0px;
-    right: 0px;
-    overflow: hidden;
-    background-color:white;
-    text-align: center;
-  }
+  position: fixed;
+  bottom: 0px;
+  height: 40px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+  background-color:white;
+  text-align: center;
+}
