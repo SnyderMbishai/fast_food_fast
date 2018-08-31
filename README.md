@@ -14,6 +14,8 @@ Is a food delivery app for a restaurant.
 
 ## gh-pages link:
 
+https://snydermbishai.github.io/fast_food_fast/UI/templates/index.html
+
 ## Technologies Used
 
 1. HTML
