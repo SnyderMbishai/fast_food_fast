@@ -31,6 +31,13 @@ https://snydermbishai.github.io/fast_food_fast/UI/templates/index.html
 
 ### Screenshots
 
+![alt text](https://github.com/SnyderMbishai/fast_food_fast/blob/develop/screenshots/Screenshot%20from%202018-08-31%2019-37-43.png "Home page")
+![alt text](https://github.com/SnyderMbishai/fast_food_fast/blob/develop/screenshots/Screenshot%20from%202018-08-31%2020-57-12.png "Signup")
+![alt text](https://github.com/SnyderMbishai/fast_food_fast/blob/develop/screenshots/Screenshot%20from%202018-08-31%2010-30-51.png "login")
+![alt text](https://github.com/SnyderMbishai/fast_food_fast/blob/develop/screenshots/Screenshot%20from%202018-08-31%2010-37-00.png "items")
+![alt text](https://github.com/SnyderMbishai/fast_food_fast/blob/develop/screenshots/Screenshot%20from%202018-08-31%2020-14-43.png "admin")
+
+
 ## Licensing
 
     MIT
