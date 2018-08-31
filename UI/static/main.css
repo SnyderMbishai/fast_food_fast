@@ -1,6 +1,5 @@
 
-body{
-    
+body{    
     background-image: url(../static/18.jpg);
     padding: 10px;
     margin: 0;
@@ -22,27 +21,27 @@ body{
   }
 
 .header a{
-  float: left;
-  border-right: 1px solid #bbb;
-  display: block;
-  color: yellow;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+    float: left;
+    border-right: 1px solid #bbb;
+    display: block;
+    color: yellow;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
 
 .header a.nav{
-  float: right;
-  font-size: 17px;
-}
+    float: right;
+    font-size: 17px;
+  }
 
 .header a:hover{
-  background-color: #111;
-}
+    background-color: #111;
+  }
 
 .header a.active{
-  background-color:#FFA500;
-}
+    background-color:#FFA500;
+  }
 
 
 .introduction, #btn{
@@ -50,26 +49,25 @@ body{
     text-align: center;
     color: saddlebrown;
     margin-top: 0px;
-}
+  }
 
 .btn{
-  margin:10px;
-  font: 20px;
-}
+    margin:10px;
+    font: 20px;
+  }
 
 #top{
-  margin-top: 100px;
-}
-
+    margin-top: 100px;
+  }
 
 #footer{
-  position: fixed;
-  bottom: 0px;
-  height: 40px;
-  left: 0px;
-  right: 0px;
-  overflow: hidden;
-  /* background-image: url(../static/21.jpg); */
-  background-color:white;
-  text-align: center;
-}
+    position: fixed;
+    bottom: 0px;
+    height: 40px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    /* background-image: url(../static/21.jpg); */
+    background-color:white;
+    text-align: center;
+  }
