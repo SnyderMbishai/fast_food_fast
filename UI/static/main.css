@@ -1,6 +1,5 @@
 
-body{
-    
+body{    
     background-image: url(../static/18.jpg);
     padding: 10px;
     margin: 0;
@@ -14,8 +13,6 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* background-image: url(../static/21.jpg); */
-    /* background-color: white; */
     position: relative;
     top: 0;
     width: 100%;
@@ -44,7 +41,6 @@ body{
   background-color:#FFA500;
 }
 
-
 .introduction, #btn{
 
     text-align: center;
@@ -61,7 +57,6 @@ body{
   margin-top: 100px;
 }
 
-
 #footer{
   position: fixed;
   bottom: 0px;
@@ -69,7 +64,6 @@ body{
   left: 0px;
   right: 0px;
   overflow: hidden;
-  /* background-image: url(../static/21.jpg); */
   background-color:white;
   text-align: center;
 }
