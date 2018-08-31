@@ -1,6 +1,5 @@
 
-body{
-    
+body{    
     background-image: url(../static/18.jpg);
     padding: 10px;
     margin: 0;
@@ -42,7 +41,6 @@ body{
   background-color:#FFA500;
 }
 
-
 .introduction, #btn{
 
     text-align: center;
@@ -58,7 +56,6 @@ body{
 #top{
   margin-top: 100px;
 }
-
 
 #footer{
   position: fixed;
