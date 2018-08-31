@@ -6,9 +6,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 h1{
     color: white;
 }
+
 div.fig{
     background-color: rgba(0,0,0,0.5);
     color:white;
@@ -18,13 +20,16 @@ div.fig{
     padding-bottom: 30px;
     padding-top: 15px;
 }
+
 .fig{
     float: left;
 }
+
 img{
     width:300px; 
     height:200px;
 }
+
 .nav{
     position: fixed;
     width: 200px;
