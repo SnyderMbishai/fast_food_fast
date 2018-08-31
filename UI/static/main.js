@@ -5,3 +5,7 @@ function confirmDel() {
 function confirmChanges() {
     confirm("Are you sure you want to save the changes? This action cannot be undone!");
 }
+
+function confirmAction(){
+    confirm("Are you sure about this?");
+}
