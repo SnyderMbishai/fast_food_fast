@@ -14,8 +14,6 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* background-image: url(../static/21.jpg); */
-    /* background-color: white; */
     position: relative;
     top: 0;
     width: 100%;
@@ -69,7 +67,6 @@ body{
   left: 0px;
   right: 0px;
   overflow: hidden;
-  /* background-image: url(../static/21.jpg); */
   background-color:white;
   text-align: center;
 }
