@@ -1,0 +1,56 @@
+body{
+    background-image: url(../static/images/4.jpg);
+    margin: 0;
+    font-family: 'Comic Sans MS';
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color: yellow;
+}
+h3{
+    color: white;
+}
+
+div.intro{
+    background-image: url(../static/images/19.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    box-shadow: 10px 10px yellow;
+}
+#footer{
+    position: fixed;
+    bottom: 0px;
+    height: 40px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    background-image: url(../static/images/19.jpg);
+    background-color:white;
+    text-align: center;
+    color: white;
+  }
+
+  button{
+      font-size: 14pt;
+      color:black;
+      background-color: yellow;
+      width:100px;
+      margin-bottom: 0px;
+  }
+  .btn{
+      margin-bottom: 0px;
+  }
+  hr{
+      width: 100px;
+  }
