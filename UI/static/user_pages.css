@@ -3,7 +3,8 @@ body{
     background-size: cover;
     margin: 0;
     font-family: 'Comic Sans MS';
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat; 
+    cursor: pointer;   
 }
 
 h1{

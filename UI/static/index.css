@@ -4,6 +4,7 @@ body{
     font-family: 'Comic Sans MS';
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 h1{
     color: yellow;
@@ -47,6 +48,7 @@ div.intro{
       background-color: yellow;
       width:100px;
       margin-bottom: 0px;
+      cursor: pointer;
   }
   .btn{
       margin-bottom: 0px;
