@@ -1,0 +1,78 @@
+body{    
+    background-image: url(../static/images/19.jpg);
+    background-size: cover;
+    margin: 0;
+    font-family: 'Comic Sans MS';
+    background-repeat: no-repeat; 
+    cursor: pointer;   
+}
+
+.nav{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    padding-top: 18px;
+    background-color:rgba(0,0,0,0.5);
+}
+
+.nav a{
+    padding-left: 16px;
+    padding-right: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.nav a:hover {
+    color: saddlebrown;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+  
+#footer{
+    position: fixed;
+    bottom: 0px;
+    height: 40px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    text-align: center;
+}
+
+@media screen and (max-height: 400px) {
+    .nav {padding-top: 16px;}
+    .nav a {font-size: 14px;}
+    .nav width{width: 50px;}
+}
+
+table{
+    border-collapse: collapse;
+    width: 50%;
+    text-align: left;
+    color: white;    
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: rgba(0,0,0,0.5);
+}
+
+td{
+    border-bottom: solid;
+} 
+
+#acpt{
+    background-color: aqua;
+}
+
+#decln{
+    background-color: red;
+}
