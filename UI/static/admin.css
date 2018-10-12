@@ -64,12 +64,11 @@ img{
     padding: 0px 10px;
 }
 .fields{
-    background-color: aqua;
     padding-bottom: 50px;
     margin-left: 400px;
     margin-right: 200px;
     margin-top: 200px;
-    background-image: url(../static/images/15.jpg);
+    background-color:rgba(0,0,0,0.5);
     background-position: 10%;
 
 }
@@ -115,7 +114,7 @@ img{
   }
 #na{
     margin-top: 10%;
-    color: rgb(2, 54, 2);
+    color: white;
 }
 input{
     width: 100%;
