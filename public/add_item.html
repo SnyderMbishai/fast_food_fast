@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../static/admin.css" />
     <script src="../static/main.js"></script>
 </head>
+
 <body>
 
     <div class="nav">
@@ -17,15 +19,15 @@
         <a href="accepted_orders.html">Accepted Orders</a>
     </div>
     <div class="fields">
-        <h1 id="na" >New Item</h1>        
+        <h1 id="na">New Item</h1>
         <div class="add_form">
-            
-            <form action="admin_dashboard.html">
+
+            <form id="newMealForm">
                 <table>
                     <tr>
                         <td>Item Name:</td>
                         <td>
-                            <input type="text">
+                            <input id="mealName" type="text">
                         </td>
                     </tr>
                     <tr>
@@ -37,7 +39,7 @@
                     <tr>
                         <td>Price:</td>
                         <td>
-                            <input type="text">
+                            <input id="price" type="text">
                         </td>
                     </tr>
 
@@ -50,11 +52,13 @@
                 </table>
             </form>
         </div>
-        
+
     </div>
     <div id=footer>
         <p>&copy; 2018 Mbishai</p>
     </div>
-    
+    <script src="./dist/newMeal.bundle.js"></script>
+
 </body>
+
 </html>
