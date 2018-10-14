@@ -2,7 +2,10 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
-  entry: {},
+  entry: {
+    home: "./src/index.js",
+    signup: ".src/signup.js"
+  },
   output: {
     path: path.resolve(__dirname, "public/dist"),
     filename: "[name].bundle.js"
@@ -22,4 +25,4 @@ module.exports = {
     ]
   },
   devtool: "inline-source-map"
-};
+}
