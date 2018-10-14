@@ -5,7 +5,11 @@ module.exports = {
   entry: {
     home: "./src/index.js",
     signup: ".src/signup.js",
-    login: "./src/login.js"
+    login: "./src/login.js",
+    options: "./src/options.js",
+    adminDash: "./src/adminDash.js",
+    newMeal: "./src/newMeal.js",
+    editMeal: "./src/editMeal.js"
   },
   output: {
     path: path.resolve(__dirname, "public/dist"),
