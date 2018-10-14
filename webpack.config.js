@@ -4,7 +4,8 @@ module.exports = {
   mode: "development",
   entry: {
     home: "./src/index.js",
-    signup: ".src/signup.js"
+    signup: ".src/signup.js",
+    login: "./src/login.js"
   },
   output: {
     path: path.resolve(__dirname, "public/dist"),
@@ -25,4 +26,4 @@ module.exports = {
     ]
   },
   devtool: "inline-source-map"
-}
+};
