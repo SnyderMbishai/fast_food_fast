@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/admin.css" />
     <script src="../static/main.js"></script>
+    <!-- <script type="text/js">
+        let username = document.getElementById("admin")
+        username.innerHTML = localStorage.getItem('username')
+    </script> -->
 </head>
+
 <body>
 
     <div class="nav">
@@ -15,21 +21,40 @@
         <a href="admin_dashboard.html">FFF Specials</a>
         <a href="orders.html">User Orders</a>
         <a href="accepted_orders.html">Accepted Orders</a>
-        <a href=""></a>
-        <a href=""></a>
+        <a id="admin"></a>
     </div>
     <div class="options">
         <h1 id="lft">Available Items</h1>
-        <a href="add_item.html" ><button id="add">Add new item</button></a>
+        <a href="add_item.html">
+            <button id="add">Add new item</button>
+        </a>
 
-        <div class="imgs">
+        <div class="imgs" id="new">
+            <!-- <div class="fig" ></div>
+            <div class="fig">
+                <figure>
+                    <img src="../static/images/3.jpg" alt="food option">
+                    <figcaption>
+                        <a id="newMealName"></a>
+                    </figcaption>
+                </figure>
+                <p>
+                    <a id="newMealprice"></a>
+                </p>
+                <a href="edit.html">
+                    <button id="edit">Edit</button>
+                </a>
+                <button onclick="confirmDel()" id="danger">Delete</button>
+            </div>
             <div class="fig">
                 <figure>
                     <img src="../static/images/3.jpg" alt="food option">
                     <figcaption>burger</figcaption>
                 </figure>
                 <p>price: 5.00$</p>
-                <a href="edit.html"><button id="edit">Edit</button></a>
+                <a href="edit.html">
+                    <button id="edit">Edit</button>
+                </a>
                 <button onclick="confirmDel()" id="danger">Delete</button>
             </div>
             <div class="fig">
@@ -38,16 +63,20 @@
                     <figcaption>jikoni fries</figcaption>
                 </figure>
                 <p>price: 3.00$</p>
-                <a href="edit.html"><button id="edit">Edit</button></a>
+                <a href="edit.html">
+                    <button id="edit">Edit</button>
+                </a>
                 <button onclick="confirmDel()" id="danger">Delete</button>
             </div>
             <div class="fig">
                 <figure>
-                    <img src="../static/images/7.jpg"  alt="food option">
+                    <img src="../static/images/7.jpg" alt="food option">
                     <figcaption>cake</figcaption>
                 </figure>
                 <p>price: 2.50$</p>
-                <a href="edit.html"><button id="edit">Edit</button></a>
+                <a href="edit.html">
+                    <button id="edit">Edit</button>
+                </a>
                 <button onclick="confirmDel()" id="danger">Delete</button>
             </div>
             <div class="fig">
@@ -56,14 +85,18 @@
                     <figcaption>french fries</figcaption>
                 </figure>
                 <p>price: 4.50$</p>
-                <a href="edit.html"><button id="edit">Edit</button></a>
+                <a href="edit.html">
+                    <button id="edit">Edit</button>
+                </a>
                 <button onclick="confirmDel()" id="danger">Delete</button>
-            </div>            
+            </div> -->
         </div>
     </div>
     <div id=footer>
         <p>&copy; 2018 Mbishai</p>
     </div>
-    
+    <script src="./dist/adminDash.bundle.js"></script>
+
 </body>
+
 </html>
