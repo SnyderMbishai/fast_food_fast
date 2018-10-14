@@ -8,10 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/admin.css" />
     <script src="../static/main.js"></script>
-    <!-- <script type="text/js">
-        let username = document.getElementById("admin")
-        username.innerHTML = localStorage.getItem('username')
-    </script> -->
+    <script>
+        function getID(e) {
+            event.preventDefault();
+            let id = event.currentTarget.dataset.id
+            sessionStorage.setItem('mealId', id)
+            window.location.replace('edit.html')
+        }
+    </script>
 </head>
 
 <body>
@@ -30,66 +34,7 @@
         </a>
 
         <div class="imgs" id="new">
-            <!-- <div class="fig" ></div>
-            <div class="fig">
-                <figure>
-                    <img src="../static/images/3.jpg" alt="food option">
-                    <figcaption>
-                        <a id="newMealName"></a>
-                    </figcaption>
-                </figure>
-                <p>
-                    <a id="newMealprice"></a>
-                </p>
-                <a href="edit.html">
-                    <button id="edit">Edit</button>
-                </a>
-                <button onclick="confirmDel()" id="danger">Delete</button>
-            </div>
-            <div class="fig">
-                <figure>
-                    <img src="../static/images/3.jpg" alt="food option">
-                    <figcaption>burger</figcaption>
-                </figure>
-                <p>price: 5.00$</p>
-                <a href="edit.html">
-                    <button id="edit">Edit</button>
-                </a>
-                <button onclick="confirmDel()" id="danger">Delete</button>
-            </div>
-            <div class="fig">
-                <figure>
-                    <img src="../static/images/4.jpg" alt="food option">
-                    <figcaption>jikoni fries</figcaption>
-                </figure>
-                <p>price: 3.00$</p>
-                <a href="edit.html">
-                    <button id="edit">Edit</button>
-                </a>
-                <button onclick="confirmDel()" id="danger">Delete</button>
-            </div>
-            <div class="fig">
-                <figure>
-                    <img src="../static/images/7.jpg" alt="food option">
-                    <figcaption>cake</figcaption>
-                </figure>
-                <p>price: 2.50$</p>
-                <a href="edit.html">
-                    <button id="edit">Edit</button>
-                </a>
-                <button onclick="confirmDel()" id="danger">Delete</button>
-            </div>
-            <div class="fig">
-                <figure>
-                    <img src="../static/images/9.jpg" alt="food option">
-                    <figcaption>french fries</figcaption>
-                </figure>
-                <p>price: 4.50$</p>
-                <a href="edit.html">
-                    <button id="edit">Edit</button>
-                </a>
-                <button onclick="confirmDel()" id="danger">Delete</button>
-            </div> -->
+
         </div>
     </div>
     <div id=footer>
