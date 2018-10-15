@@ -10,9 +10,9 @@ module.exports = {
     adminDash: "./src/adminDash.js",
     newMeal: "./src/newMeal.js",
     // getMeal:"./src/getMeal.js",
-    editMeal:"./src/editMeal.js"
+    editMeal:"./src/editMeal.js",
     // delMeal: "./src/delMeal.js",
-    // placeOrder: "./src/placeOrder.js",
+    placeOrder: "./src/placeOrder.js"
     // editOrder:"./src/editOrder.js",
     // completeOrder: ".src/completeOrder.js",
     // acceptOrder: ".src/acceptOrder.js"
