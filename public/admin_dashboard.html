@@ -7,13 +7,35 @@
     <title>dashbord</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/admin.css" />
-    <script src="../static/main.js"></script>
+    <!-- <script src="../src/adminDash.js"></script> -->
     <script>
-        function getID(e) {
+        function getID(event) {
             event.preventDefault();
             let id = event.currentTarget.dataset.id
             sessionStorage.setItem('mealId', id)
             window.location.replace('edit.html')
+        }
+        function delMeal(event) {
+            event.preventDefault();
+            let id = event.currentTarget.dataset.id;
+            sessionStorage.setItem("mealId", id);
+            let accessToken = localStorage.getItem('token');
+            console.log(accessToken);
+            let url = `http://0.0.0.0:5000/api/v2/meals/${id}`;
+            fetch(url, {
+                method: "DELETE",
+                headers: {
+                    Authorization: `Bearer ${accessToken}`,
+                    "content-type": "application/json"
+                }
+            })
+                .then(response => response.json())
+                .then(response => {
+                    swal(response.message).then(() => {
+                        window.location.replace('admin_dashboard.html')
+                    })
+                });
+             
         }
     </script>
 </head>

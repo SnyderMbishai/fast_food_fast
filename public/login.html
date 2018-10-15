@@ -2,46 +2,43 @@
 
 <html>
 
-<head>
-    <title>login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../static/auth.css">
-</head>
+    <head>
+        <title>login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../static/auth.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="login">
-        <h1 id="title">Login</h1>
-        <div>
-            <form id="loginform">
-                <table>
-                    <tr>
-                        <td>
-                            <input id="username" type="text" placeholder="Username" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input id="password" type="password" placeholder="Password" pattern=".{8,}" title="Password should be more than 8 characters."
-                                required>
-                        </td>
-                    </tr>
-                </table>
+        <div class="login">
+            <h1 id="title">Login</h1>
+            <div>
+                <form id="loginform">
+                    <table>
+                        <tr>
+                            <td>
+                                <input id="username" type="text" placeholder="Username" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input id="password" type="password" placeholder="Password" pattern=".{8,}" title="Password should be more than 8 characters." required>
+                            </td>
+                        </tr>
+                    </table>
 
-                <button id="submit" type="submit">Login</button>
+                    <button id="submit" type="submit" >Login</button>
 
-                <p id="p1">Don't have an account yet?
-                    <a href="signup.html">Register</a>
-                </p>
+                    <p id="p1">Don't have an account yet? <a href="signup.html">Register</a></p>
 
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
 
-    <div id=footer>
-        <p>&copy; 2018 Mbishai</p>
-    </div>
-    <script src="./dist/login.bundle.js"></script>
-</body>
+        <div id=footer>
+            <p>&copy; 2018 Mbishai</p>
+        </div>
+        <script src="./dist/login.bundle.js"></script>
+    </body>
 
 </html>

@@ -1,12 +1,9 @@
 import { getData } from "./common";
-import { deleteData } from "./common";
 import swal from "sweetalert";
 
-let username = document.getElementById("admin");
-let loggedInAdmin = localStorage.getItem("username");
-username.innerHTML = `Admin logged in as:${loggedInAdmin}`;
-
-
+let username = document.getElementById("user");
+let loggedInUser = localStorage.getItem("username");
+username.innerHTML = `Logged in as:${loggedInUser}`;
 
 // getData all meals
 let accessToken = localStorage.getItem("token");
@@ -28,18 +25,11 @@ getData(url, accessToken)
                       <figcaption>${meal.name}</figcaption>
                   </figure>
                   <p>price: ksh ${meal.price}</p>
-                  <a href="edit.html">
-                    <button id="edit" onClick="getID(event)" data-id="${
-                      meal.id
-                    }">Edit</button>
-                </a>
-                <button onClick="delMeal(event)" data-id="${
-                  meal.id
-                }" id="danger" >Delete</button>
+                  <input type="submit" onClick="getID(event)" value="Order" data-id="${
+                    meal.id
+                  }">
                   </div>`;
         }
       }
     }
   });
-
-// function delMeal(event) {}
