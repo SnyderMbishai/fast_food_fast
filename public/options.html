@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +9,20 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../static/user_pages.css" />
     <script src="../static/main.js"></script>
 </head>
+
 <body>
 
     <div class="nav">
         <a href="index.html">Home</a>
         <a href="options.html">FFF Specials</a>
         <a href="order_history.html">Order History</a>
-        
+        <a id="user"></a>
     </div>
     <div class="options">
         <h1>options</h1>
 
-        <div class="imgs">
-            <div class="fig">
+        <div class="imgs" id="new">
+            <!-- <div class="fig">
                 <figure>
                     <img src="../static/images/3.jpg" alt="food option">
                     <figcaption>burger</figcaption>
@@ -38,7 +40,7 @@
             </div>
             <div class="fig">
                 <figure>
-                    <img src="../static/images/7.jpg"  alt="food option">
+                    <img src="../static/images/7.jpg" alt="food option">
                     <figcaption>cake</figcaption>
                 </figure>
                 <p>price: 2.00$</p>
@@ -51,13 +53,14 @@
                 </figure>
                 <p>price: 4.50$</p>
                 <input type="submit" value="Order">
-            </div>            
+            </div> -->
         </div>
 
     </div>
     <div id=footer>
         <p>&copy; 2018 Mbishai</p>
     </div>
-    
+    <script src="./dist/options.bundle.js"></script>
 </body>
+
 </html>
