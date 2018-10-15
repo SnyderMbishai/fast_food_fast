@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>dashbord</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/admin.css" />
+    <!-- <script src="../src/adminDash.js"></script> -->
+    <script>
+        function getID(event) {
+            event.preventDefault();
+            let id = event.currentTarget.dataset.id
+            sessionStorage.setItem('mealId', id)
+            window.location.replace('edit.html')
+        }
+        function delMeal(event) {
+            event.preventDefault();
+            let id = event.currentTarget.dataset.id;
+            sessionStorage.setItem("mealId", id);
+            let accessToken = localStorage.getItem('token');
+            console.log(accessToken);
+            let url = `http://0.0.0.0:5000/api/v2/meals/${id}`;
+            fetch(url, {
+                method: "DELETE",
+                headers: {
+                    Authorization: `Bearer ${accessToken}`,
+                    "content-type": "application/json"
+                }
+            })
+                .then(response => response.json())
+                .then(response => {
+                    swal(response.message).then(() => {
+                        window.location.replace('admin_dashboard.html')
+                    })
+                });
+             
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="admin_dashboard.html">FFF Specials</a>
+        <a href="orders.html">User Orders</a>
+        <a href="accepted_orders.html">Accepted Orders</a>
+        <a id="admin"></a>
+    </div>
+    <div class="options">
+        <h1 id="lft">Available Items</h1>
+        <a href="add_item.html">
+            <button id="add">Add new item</button>
+        </a>
+
+        <div class="imgs" id="new">
+
+        </div>
+    </div>
+    <div id=footer>
+        <p>&copy; 2018 Mbishai</p>
+    </div>
+    <script src="./dist/adminDash.bundle.js"></script>
+
+</body>
+
+</html>

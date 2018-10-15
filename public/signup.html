@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Signup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../static/auth.css">
+</head>
+
+<body>
+
+  <div class="register">
+    <h1 id="title">Register</h1>
+
+    <div>
+      <form id="signupform">
+        <table>
+          <tr>
+            <td>
+              <input id="username" type="text" placeholder="Username" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input id="email" type="email" placeholder="Email Address" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input id="password" type="password" placeholder="Password" pattern=".{8,}" title="Password must be more than 8 characters"
+                required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input id="password1" type="password" placeholder="Confirm Password" required>
+            </td>
+          </tr>
+        </table>
+
+        <button type="submit" id="submit">Register</button>
+        <p id="p1">Already have an account?
+          <a href="login.html">login</a>
+        </p>
+
+      </form>
+    </div>
+  </div>
+
+  <div id=footer>
+    <p>&copy; 2018 Mbishai</p>
+  </div>
+  <script src="./dist/signup.bundle.js"></script>
+</body>
+
+</html>
