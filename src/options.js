@@ -25,7 +25,9 @@ getData(url, accessToken)
                       <figcaption>${meal.name}</figcaption>
                   </figure>
                   <p>price: ksh ${meal.price}</p>
-                  <input type="submit" onClick="" value="Order" data-id="${meal.id}">
+                  <input type="submit" onClick="getID(event)" value="Order" data-id="${
+                    meal.id
+                  }">
                   </div>`;
         }
       }
