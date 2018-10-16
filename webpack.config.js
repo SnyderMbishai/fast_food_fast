@@ -12,7 +12,8 @@ module.exports = {
     // getMeal:"./src/getMeal.js",
     editMeal:"./src/editMeal.js",
     // delMeal: "./src/delMeal.js",
-    placeOrder: "./src/placeOrder.js"
+    placeOrder: "./src/placeOrder.js",
+    orders: "./src/orders.js"
     // editOrder:"./src/editOrder.js",
     // completeOrder: ".src/completeOrder.js",
     // acceptOrder: ".src/acceptOrder.js"
