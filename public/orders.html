@@ -8,6 +8,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/orders.css" />
     <script src="../static/main.js"></script>
+    <script>
+        function acceptOrder(event) {
+            event.preventDefault();
+            let id = event.currentTarget.dataset.id;
+            let accessToken = localStorage.getItem('token');
+            let url = `http://0.0.0.0:5000/api/v2/orders/accept/${id}`;
+            let data = { accepted: true }
+            fetch(url, {
+                method: "PATCH",
+                body: JSON.stringify(data),
+                headers: {
+                    Authorization: `Bearer ${accessToken}`,
+                    "content-type": "application/json"
+                }
+            })
+                .then(response => response.json())
+                .then(response => {
+                    swal(response.message).then(() => {
+                        window.location.replace('orders.html')
+                    })
+                });
+        }
+        function declineOrder(event) {
+                event.preventDefault();
+                let id = event.currentTarget.dataset.id;
+                let accessToken = localStorage.getItem('token');
+                let url = `http://0.0.0.0:5000/api/v2/orders/accept/${id}`;
+                let data = { accepted: false }
+                fetch(url, {
+                    method: "PATCH",
+                    body: JSON.stringify(data),
+                    headers: {
+                        Authorization: `Bearer ${accessToken}`,
+                        "content-type": "application/json"
+                    }
+                })
+                    .then(response => response.json())
+                    .then(response => {
+                        swal(response.message).then(() => {
+                            window.location.replace('orders.html')
+                        })
+                    });
+            }
+
+    </script>
 </head>
 
 <body>
