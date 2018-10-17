@@ -7,6 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/orders.css" />
     <script src="../static/main.js"></script>
+    <script>
+                function completeOrder(event) {
+                        event.preventDefault();
+                        let id = event.currentTarget.dataset.id;
+                        let accessToken = localStorage.getItem('token');
+                        let url = `http://0.0.0.0:5000/api/v2/orders/${id}`;
+                        fetch(url, {
+                            method: "PATCH",
+                            headers: {
+                                Authorization: `Bearer ${accessToken}`,
+                                "content-type": "application/json"
+                            }
+                        })
+                            .then(response => response.json())
+                            .then(response => {
+                                swal(response.message).then(() => {
+                                    window.location.replace('accepted_orders.html')
+                                })
+                            });
+                    }
+    </script>
 </head>
 <body>
 
