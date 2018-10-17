@@ -15,48 +15,18 @@
         <a href="admin_dashboard.html">FFF Specials</a>
         <a href="orders.html">User Orders</a>
         <a href="accepted_orders.html">Accepted Orders</a>
+        <a id="admin"></a>
     </div>
     <div class="orders">
-        
-        <div class="orderstd"> 
-            <h1>Accepted Orders</h1>       
-            <table>
+
+        <div class="orderstd">
+            <h1>Accepted Orders</h1>
+            <table id="accepted">
                 <th>Customer</th>
                 <th>Order</th>
                 <th>Quantity</th>
-                <th>Date</th>
+                <th>Time</th>
                 <th>Action</th>
-                <tr>
-                    <td>Halima</td>
-                    <td>Jikoni fries</td>
-                    <td>3</td>
-                    <td>31/8/2018</td>
-                    <td>
-                        <button onclick="confirmAction()" id="acpt">complete</button>
-                        <button onclick="confirmAction()" id="decln">revert</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Mbishai</td>
-                    <td>Burger</td>
-                    <td>5</td>
-                    <td>31/8/2018</td>
-                    <td>
-                        <button onclick="confirmAction()" id="acpt">complete</button>
-                        <button onclick="confirmAction()" id="decln">revert</button>
-                    </td>
-                </tr> 
-                <tr>
-                    <td>Pruddy</td>
-                    <td>French fries</td>
-                    <td>1</td>
-                    <td>31/8/2018</td>
-                    <td>
-                        <button onclick="confirmAction()" id="acpt">complete</button>
-                        <button onclick="confirmAction()" id="decln">revert</button>
-                    </td>
-                </tr> 
-
             </table>
         </div>
 
@@ -64,6 +34,7 @@
     <div id=footer>
         <p>&copy; 2018 Mbishai</p>
     </div>
-    
+    <script src="./dist/acceptOrder.bundle.js"></script>
+
 </body>
 </html>
