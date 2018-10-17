@@ -36,22 +36,7 @@ getData(url, accessToken)
                         <button onclick="confirmAction()" id="decln">decline</button>
                     </td>
                 </tr>`;
-              // document.getElementById(
-              //   "new"
-              // ).innerHTML += `<div class="fig" "><figure>
-              //             <img src="../static/images/3.jpg" alt="food option">
-              //             <figcaption>${meal.name}</figcaption>
-              //         </figure>
-              //         <p>price: ksh ${meal.price}</p>
-              //         <a href="edit.html">
-              //           <button id="edit" onClick="getID(event)" data-id="${
-              //             meal.id
-              //           }">Edit</button>
-              //       </a>
-              //       <button onClick="delMeal(event)" data-id="${
-              //         meal.id
-              //       }" id="danger" >Delete</button>
-              //         </div>`;
+
             }
           }
         }
@@ -59,4 +44,4 @@ getData(url, accessToken)
     }
   });
 
-// function delMeal(event) {}
+
