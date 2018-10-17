@@ -21,10 +21,10 @@ const postData = (url, data, accessToken = null) => {
   });
 };
 
-const putData = (url, accessToken, data = null) => {
+const putData = (url, accessToken, newData = null) => {
   return fetch(`${baseUrl}${url}`, {
     method: "PUT",
-    body: JSON.stringify(data),
+    body: JSON.stringify(newData),
     headers: {
       Authorization: `Bearer ${accessToken}`,
       "content-type": "application/json"
