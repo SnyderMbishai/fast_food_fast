@@ -14,10 +14,10 @@ module.exports = {
     // delMeal: "./src/delMeal.js",
     placeOrder: "./src/placeOrder.js",
     orders: "./src/orders.js",
-    userOrders:"./src/userOrders.js",
-    editOrder: "./src/editOrder.js"
+    userOrders: "./src/userOrders.js",
+    editOrder: "./src/editOrder.js",
     // completeOrder: ".src/completeOrder.js",
-    // acceptOrder: ".src/acceptOrder.js"
+    acceptOrder: "./src/acceptOrder.js"
   },
   output: {
     path: path.resolve(__dirname, "public/dist"),
