@@ -32,16 +32,17 @@ getData(url, accessToken)
                     <td>${meal.quantity}</td>
                     <td>${order.created_at}</td>
                     <td>
-                        <button onclick="confirmAction()" id="acpt">accept</button>
-                        <button onclick="confirmAction()" id="decln">decline</button>
+                        <button onclick="acceptOrder(event)" id="acpt" data-id="${
+                          order.order_id
+                        }">accept</button>
+                        <button onclick="declineOrder(event)" id="decln" data-id="${
+                          order.order_id
+                        }">decline</button>
                     </td>
                 </tr>`;
-
             }
           }
         }
       }
     }
   });
-
-
