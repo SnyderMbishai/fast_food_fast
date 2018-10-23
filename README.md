@@ -12,9 +12,9 @@ Is a food delivery app for a restaurant.
 6. Admin can reject or accept orders.
 7. Admin can mark an order as complete.
 
-## gh-pages link:
+## Heroku link:
 
-https://snydermbishai.github.io/fast_food_fast/UI/templates/index.html
+https://fastfoodfast001.herokuapp.com/
 
 ## Technologies Used
 
@@ -32,7 +32,7 @@ https://snydermbishai.github.io/fast_food_fast/UI/templates/index.html
 
 ### Screenshots
 
-![alt text](https://github.com/SnyderMbishai/fast_food_fast/blob/develop/screenshots/Screenshot%20from%202018-08-31%2019-37-43.png "Home page")
+![alt text](https://github.com/SnyderMbishai/fast_food_fast/blob/develop/screenshots/Screenshot%20from%202018-10-23%2013-44-31.png "Home page")
 ![alt text](https://github.com/SnyderMbishai/fast_food_fast/blob/develop/screenshots/Screenshot%20from%202018-08-31%2020-57-12.png "Signup")
 ![alt text](https://github.com/SnyderMbishai/fast_food_fast/blob/develop/screenshots/Screenshot%20from%202018-08-31%2010-30-51.png "login")
 ![alt text](https://github.com/SnyderMbishai/fast_food_fast/blob/develop/screenshots/Screenshot%20from%202018-08-31%2010-37-00.png "items")
