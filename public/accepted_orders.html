@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +9,28 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../static/orders.css" />
     <script src="../static/main.js"></script>
     <script>
-                function completeOrder(event) {
-                        event.preventDefault();
-                        let id = event.currentTarget.dataset.id;
-                        let accessToken = localStorage.getItem('token');
-                        let url = `http://0.0.0.0:5000/api/v2/orders/${id}`;
-                        fetch(url, {
-                            method: "PATCH",
-                            headers: {
-                                Authorization: `Bearer ${accessToken}`,
-                                "content-type": "application/json"
-                            }
-                        })
-                            .then(response => response.json())
-                            .then(response => {
-                                swal(response.message).then(() => {
-                                    window.location.replace('accepted_orders.html')
-                                })
-                            });
-                    }
+        function completeOrder(event) {
+            event.preventDefault();
+            let id = event.currentTarget.dataset.id;
+            let accessToken = localStorage.getItem('token');
+            let url = `http://0.0.0.0:5000/api/v2/orders/${id}`;
+            fetch(url, {
+                method: "PATCH",
+                headers: {
+                    Authorization: `Bearer ${accessToken}`,
+                    "content-type": "application/json"
+                }
+            })
+                .then(response => response.json())
+                .then(response => {
+                    swal(response.message).then(() => {
+                        window.location.replace('accepted_orders.html')
+                    })
+                });
+        }
     </script>
 </head>
+
 <body>
 
     <div class="nav">
@@ -37,6 +39,7 @@
         <a href="orders.html">User Orders</a>
         <a href="accepted_orders.html">Accepted Orders</a>
         <a id="admin"></a>
+        <a href="index.html">Logout</a>
     </div>
     <div class="orders">
 
@@ -58,4 +61,5 @@
     <script src="./dist/acceptOrder.bundle.js"></script>
 
 </body>
+
 </html>
