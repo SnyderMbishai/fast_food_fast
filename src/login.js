@@ -26,6 +26,8 @@ document.getElementById("loginform").addEventListener("submit", function(e) {
         swal(response.message).then(() => {
           if (roles.includes("admin")) {
             window.location.href = "/admin_dashboard.html";
+          } else if (roles.includes("superuser")){
+            window.location.href = "/manage_users.html";
           } else {
             window.location.href = "/options.html";
           }
