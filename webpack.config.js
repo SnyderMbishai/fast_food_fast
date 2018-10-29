@@ -17,7 +17,8 @@ module.exports = {
     userOrders: "./src/userOrders.js",
     editOrder: "./src/editOrder.js",
     // completeOrder: ".src/completeOrder.js",
-    acceptOrder: "./src/acceptOrder.js"
+    acceptOrder: "./src/acceptOrder.js",
+    users: "./src/users.js"
   },
   output: {
     path: path.resolve(__dirname, "public/dist"),
