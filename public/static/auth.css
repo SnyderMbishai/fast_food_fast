@@ -1,6 +1,6 @@
 
-body{    
-  background-image: url(../static/images/19.jpg);
+body{
+  background-image: url(../static/images/wood1.jpg);
   padding: 10px;
   margin: 0;
   font-family: 'Comic Sans MS';
@@ -26,7 +26,7 @@ body{
   width: 400px;
   height: auto;
   border-style: inset;
-  padding: 12px;  
+  padding: 12px;
   color: saddlebrown;
 }
 
@@ -68,6 +68,6 @@ input[type="text"],input[type="email"], input[type="password"]{
 }
 @media screen and (max-width: 800px) {
   body,.footer {
-    width: 100%;    
+    width: 100%;
   }
 }
