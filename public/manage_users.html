@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>users</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="../static/orders.css" />
+  <script src="../static/main.js"></script>
+  <script>
+    function promoteUser(event) {
+      event.preventDefault();
+      let id = event.currentTarget.dataset.id;
+      sessionStorage.setItem("mealId", id);
+      let accessToken = localStorage.getItem('token');
+      let url = `http://0.0.0.0:5000/api/v2/users/manage/${id}`;
+      fetch(url, {
+        method: "PUT",
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+          "content-type": "application/json"
+        }
+      })
+        .then(response => response.json())
+        .then(response => {
+          swal(response.message).then(() => {
+            window.location.replace('manage_users.html')
+          })
+        });
+
+    }
+
+  </script>
+</head>
+
+<body>
+
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a id="super"></a>
+    <a href="index.html">Logout</a>
+  </div>
+  <div class="orders">
+
+    <div class="users">
+      <h1>Users</h1>
+      <table id="users">
+        <th>user</th>
+        <th>roles</th>
+        <th>Action</th>
+      </table>
+      <h1>Admins</h1>
+      <table id="admins">
+        <th>user</th>
+        <th>roles</th>
+        <th>Action</th>
+      </table>
+      <h1>Superusers</h1>
+      <table id="superuser">
+        <th>user</th>
+        <th>roles</th>
+      </table>
+    </div>
+
+  </div>
+  <div id=footer>
+    <p>&copy; 2018 Mbishai</p>
+  </div>
+  <script src="./dist/users.bundle.js"></script>
+
+</body>
+
+</html>
