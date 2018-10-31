@@ -25,7 +25,7 @@ getData(url, accessToken)
               let meal = meals[i];
               if (order.completed === true) {
                 console.log("Aye");
-                document.getElementById("accepted").innerHTML += `<tr>
+                document.getElementById("completed").innerHTML += `<tr>
                       <td>${order.username}</td>
                       <td>${meal.meal_name}</td>
                       <td>${meal.quantity}</td>

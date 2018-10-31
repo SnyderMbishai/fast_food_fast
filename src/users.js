@@ -24,13 +24,6 @@ getData(url, accessToken)
             document.getElementById("admins").innerHTML += `<tr>
                     <td>${user.username}</td>
                     <td>${user.roles}</td>
-                    <td>
-                        <button onclick="demoteUser(event)" id="acpt" data-id="
-                          order">demote</button>
-                        <button onclick="deleteUser(event)" id="decln" data-id="
-                          order.order_id
-                        ">delete</button>
-                    </td>
                 </tr>`;
             console.log(">>>>>>>1");
             // display superusers
