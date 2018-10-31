@@ -8,12 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/orders.css" />
     <script src="../static/main.js"></script>
+    <!-- <script src="../src/orders.js"></script> -->
     <script>
         function acceptOrder(event) {
             event.preventDefault();
             let id = event.currentTarget.dataset.id;
             let accessToken = localStorage.getItem('token');
-            let url = `http://0.0.0.0:5000/api/v2/orders/accept/${id}`;
+            let url = `https://fastfoodfastapi1n2.herokuapp.com/api/v2/orders/accept/${id}`;
             let data = { accepted: true }
             fetch(url, {
                 method: "PATCH",
@@ -31,37 +32,55 @@
                 });
         }
         function declineOrder(event) {
-                event.preventDefault();
-                let id = event.currentTarget.dataset.id;
-                let accessToken = localStorage.getItem('token');
-                let url = `http://0.0.0.0:5000/api/v2/orders/accept/${id}`;
-                let data = { accepted: false }
-                fetch(url, {
-                    method: "PATCH",
-                    body: JSON.stringify(data),
-                    headers: {
-                        Authorization: `Bearer ${accessToken}`,
-                        "content-type": "application/json"
-                    }
-                })
-                    .then(response => response.json())
-                    .then(response => {
-                        swal(response.message).then(() => {
-                            window.location.replace('orders.html')
-                        })
-                    });
-            }
+            event.preventDefault();
+            let id = event.currentTarget.dataset.id;
+            let accessToken = localStorage.getItem('token');
+            let url = `https://fastfoodfastapi1n2.herokuapp.com/api/v2/orders/accept/${id}`;
+            let data = { accepted: false }
+            fetch(url, {
+                method: "PATCH",
+                body: JSON.stringify(data),
+                headers: {
+                    Authorization: `Bearer ${accessToken}`,
+                    "content-type": "application/json"
+                }
+            })
+                .then(response => response.json())
+                .then(response => {
+                    swal(response.message).then(() => {
+                        window.location.replace('orders.html')
+                    })
+                });
+        }
 
+        function completeOrder(event) {
+            event.preventDefault();
+            let id = event.currentTarget.dataset.id;
+            let accessToken = localStorage.getItem("token");
+            let url = `https://fastfoodfastapi1n2.herokuapp.com/api/v2/orders/${id}`;
+            fetch(url, {
+                method: "PATCH",
+                headers: {
+                    Authorization: `Bearer ${accessToken}`,
+                    "content-type": "application/json"
+                }
+            })
+                .then(response => response.json())
+                .then(response => {
+                    swal(response.message).then(() => {
+                        window.location.replace("orders.html");
+                    });
+                });
+        }
     </script>
 </head>
-
 <body>
 
     <div class="nav">
         <a href="index.html">Home</a>
         <a href="admin_dashboard.html">FFF Specials</a>
         <a href="orders.html">User Orders</a>
-        <a href="accepted_orders.html">Accepted Orders</a>
+        <a href="accepted_orders.html">Completed Orders</a>
         <a id="admin"></a>
         <a href="index.html">Logout</a>
     </div>
@@ -76,6 +95,10 @@
                 <th>Time</th>
                 <th>Action</th>
             </table>
+            <h1>Accepted Orders</h1>
+            <table id="accepted"></table>
+            <h1>Rejected Orders</h1>
+            <table id="rejected"></table>
         </div>
 
     </div>
