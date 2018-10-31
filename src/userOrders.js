@@ -24,18 +24,30 @@ getData(url, accessToken)
             if (meals.hasOwnProperty(i)) {
               let meal = meals[i];
               console.log(meal.quantity);
-
               console.log(order.meals);
-              document.getElementById("userOrders").innerHTML += `<tr>
-                    <td>${meal.meal_name}</td>
-                    <td>${meal.quantity}</td>
-                    <td>${order.created_at}</td>
-                    <td>
-                        <button onclick="getID(event)" id="acpt" data-id="${
-                          order.order_id
-                        }">Edit</button>
-                    </td>
-                </tr>`;
+              if (order.completed === false) {
+                document.getElementById("open").innerHTML += `<tr>
+                      <td>${meal.meal_name}</td>
+                      <td>${meal.quantity}</td>
+                      <td>${order.created_at}</td>
+                      <td>
+                          <button onclick="getID(event)" id="acpt" data-id="${
+                            order.order_id
+                          }">Edit</button>
+                      </td>
+                  </tr>`;
+              } else {
+                document.getElementById("completed").innerHTML += `<tr>
+                      <td>${meal.meal_name}</td>
+                      <td>${meal.quantity}</td>
+                      <td>${order.created_at}</td>
+                      <td>
+                          <button onclick="getID(event)" id="acpt" data-id="${
+                            order.order_id
+                          }">Edit</button>
+                      </td>
+                  </tr>`;
+              }
             }
           }
         }
