@@ -21,7 +21,7 @@ getData(url, accessToken)
           document.getElementById(
             "new"
           ).innerHTML += `<div class="fig" "><figure>
-                      <img src="../static/images/3.jpg" alt="food option">
+                      <img src="../static/images/${meal.img_name}" alt="food option">
                       <figcaption>${meal.name}</figcaption>
                   </figure>
                   <p>price: ksh ${meal.price}</p>
