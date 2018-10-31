@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack --watch & live-server public",
     "watch": "webpack --watch",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "test": "mocha"
   },
   "devDependencies": {
     "babel": "^6.23.0",
@@ -14,7 +15,11 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-2": "^6.24.1"
+    "babel-preset-stage-2": "^6.24.1",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "request": "^2.88.0",
+    "should": "^13.2.3"
   },
   "dependencies": {
     "jwt-decode": "^2.2.0",
