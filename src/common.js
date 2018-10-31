@@ -1,4 +1,4 @@
-const baseUrl = "http://0.0.0.0:5000/api/v2";
+const baseUrl = "https://fastfoodfastapi1n2.herokuapp.com/api/v2";
 
 const getData = (url, accessToken) => {
   return fetch(`${baseUrl}${url}`, {
