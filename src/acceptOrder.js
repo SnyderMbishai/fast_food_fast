@@ -23,18 +23,13 @@ getData(url, accessToken)
           for (let i in meals) {
             if (meals.hasOwnProperty(i)) {
               let meal = meals[i];
-              if (order.accepted === true) {
+              if (order.completed === true) {
                 console.log("Aye");
                 document.getElementById("accepted").innerHTML += `<tr>
                       <td>${order.username}</td>
                       <td>${meal.meal_name}</td>
                       <td>${meal.quantity}</td>
                       <td>${order.created_at}</td>
-                      <td>
-                          <button onclick="completeOrder(event)" id="acpt" data-id="${
-                            order.order_id
-                          }">complete</button>
-                      </td>
                   </tr>`;
               }
             }
