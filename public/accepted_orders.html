@@ -9,25 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../static/orders.css" />
     <script src="../static/main.js"></script>
     <script>
-        function completeOrder(event) {
-            event.preventDefault();
-            let id = event.currentTarget.dataset.id;
-            let accessToken = localStorage.getItem('token');
-            let url = `http://0.0.0.0:5000/api/v2/orders/${id}`;
-            fetch(url, {
-                method: "PATCH",
-                headers: {
-                    Authorization: `Bearer ${accessToken}`,
-                    "content-type": "application/json"
-                }
-            })
-                .then(response => response.json())
-                .then(response => {
-                    swal(response.message).then(() => {
-                        window.location.replace('accepted_orders.html')
-                    })
-                });
-        }
+
     </script>
 </head>
 
@@ -37,20 +19,19 @@
         <a href="index.html">Home</a>
         <a href="admin_dashboard.html">FFF Specials</a>
         <a href="orders.html">User Orders</a>
-        <a href="accepted_orders.html">Accepted Orders</a>
+        <a href="accepted_orders.html">Completed Orders</a>
         <a id="admin"></a>
         <a href="index.html">Logout</a>
     </div>
     <div class="orders">
 
         <div class="orderstd">
-            <h1>Accepted Orders</h1>
+            <h1>Completed Orders</h1>
             <table id="accepted">
                 <th>Customer</th>
                 <th>Order</th>
                 <th>Quantity</th>
                 <th>Time</th>
-                <th>Action</th>
             </table>
         </div>
 
